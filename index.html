@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Your Name" />
+  <title>Your Name | Personal Website</title>
+  <style>
+    /* ===== BASIC STYLES ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #111;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 700px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #eee;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      color: #222;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Welcome to my personal website 👋</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm <strong>Your Name</strong>, a developer, learner, and tech enthusiast.
+      I love working with web technologies, open-source tools, and creative coding.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="#">Portfolio Website</a> — my first web design project.</li>
+      <li><a href="#">Linux Scripts Collection</a> — a set of automation tools.</li>
+      <li><a href="#">GitHub Repository</a> — check out my latest code on GitHub.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Feel free to reach out!  
+      📧 <a href="mailto:your.email@example.com">your.email@example.com</a>  
+      🐙 <a href="https://github.com/your-username">github.com/your-username</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Automatically update copyright year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
