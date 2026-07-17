@@ -26,7 +26,7 @@ import xarray as xr
 
 def main():
     """Main execution block"""
-    dat_in_nc = 'E:/Data/Ellensburg_A5/A5_nc/'
+    dat_in_nc = 'E:/data_lab423_nc/A5_nc/'
     dat_out = dat_in_nc + "flux_results/"
     os.makedirs(dat_out, exist_ok=True)
     # A5 z = 2.13m

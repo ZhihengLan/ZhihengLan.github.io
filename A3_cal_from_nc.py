@@ -15,7 +15,7 @@
 """
 
 import os
-os.chdir(r'D:\pythoncode\ZhihengLan\lab423 website') # change here based on work directory
+os.chdir(r'D:/Github/Lab423 website/LAB423-website/') # change here based on work directory
 import sys
 import numpy as np
 import pandas as pd
@@ -26,7 +26,7 @@ import xarray as xr
 
 def main():
     """Main execution block"""
-    dat_in_nc = 'E:/Data/Ellensburg_A3/A3_nc/'
+    dat_in_nc = 'E:/data_lab423_nc/A3_nc/'
     dat_out = dat_in_nc + "flux_results/"
     os.makedirs(dat_out, exist_ok=True)
     # A3 z = 2.06m

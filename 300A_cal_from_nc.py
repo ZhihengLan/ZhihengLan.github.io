@@ -15,7 +15,7 @@
 """
 
 import os
-os.chdir(r'D:\pythoncode\ZhihengLan\lab423 website') # change here based on work directory
+os.chdir(r'D:\pythoncode\ZhihengLan') # change here based on work directory
 import sys
 import numpy as np
 import pandas as pd
@@ -26,7 +26,7 @@ import xarray as xr
 
 def main():
     """Main execution block"""
-    dat_in_nc = 'E:/Data/Hanford_300A/300A_nc/'
+    dat_in_nc = 'E:/data_lab423_nc/300A_nc/'
     # z = 3m
     angle = 297 # angle of csat at 300A site, degree
     dates = pd.date_range('2017-08-19', '2025-12-31')  # modify based on the dat_in

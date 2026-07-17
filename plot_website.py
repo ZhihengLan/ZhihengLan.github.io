@@ -30,17 +30,17 @@ def main():
     # flux result
     # different site names and path
     site_name = '300a'
-    path = 'E:/Data/Hanford_300A/300A_nc/'
+    path = 'E:/data_lab423_nc/300A_nc/'
 
     site_name = 'a3'
-    path = 'E:/Data/Ellensburg_A3/A3_nc/'
+    path = 'E:/data_lab423_nc/A3_nc/'
 
     site_name = 'a5'
-    path = 'E:/Data/Ellensburg_A5/A5_nc/'
+    path = 'E:/data_lab423_nc/A5_nc/'
 
     # same codes
     dat_in = path + 'flux_results/'
-    fig_out = path + 'figures/'
+    fig_out = path + f'figures/{site_name}'
     os.makedirs(fig_out, exist_ok=True)
     files = glob.glob(os.path.join(dat_in, '*.xlsx'))
     df = pd.read_excel(files[0], skiprows=[1]) # skip the unit row
